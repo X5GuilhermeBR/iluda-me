@@ -9,6 +9,7 @@ import logo from "../assets/logo.png"
 import profile from "../assets/profile.jpg"
 import bg from '../assets/image.jpg'
 import Image from 'next/image'
+import Button from '../components/Button/index'
 
 const Home = () => {
   const [quote, setQuote] = useState("");
@@ -28,6 +29,7 @@ const Home = () => {
     <Title>Iluda.me</Title>
   </ContainerIcons>
   <ContainerIcons>
+    <Button />
     <a href="https://www.linkedin.com/in/guilhermejfmello/">
     <BsLinkedin />
     </a>
