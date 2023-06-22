@@ -7,7 +7,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 5%;
 `;
 
 export const ContainerIcons = styled.div`
@@ -52,7 +52,7 @@ export const Question = styled.div`
   background: rgb(234, 188, 84);
   height: auto;
   padding: 20px;
-  color: #2a2827;
+  color: white;
   margin-top: -30px;
 
   p {

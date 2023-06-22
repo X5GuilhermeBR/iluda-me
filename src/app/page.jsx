@@ -29,7 +29,7 @@ const Home = () => {
     <Title>Iluda.me</Title>
   </ContainerIcons>
   <ContainerIcons>
-    <Button />
+    
     <a href="https://www.linkedin.com/in/guilhermejfmello/">
     <BsLinkedin />
     </a>
@@ -39,6 +39,7 @@ const Home = () => {
     <a href="https://github.com/X5GuilhermeBR">
     <BsGithub />
     </a>
+    <Button />
   </ContainerIcons>
   </Header>
     <Main style={{
