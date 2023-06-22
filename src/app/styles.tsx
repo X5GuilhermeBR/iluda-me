@@ -17,6 +17,13 @@ export const ContainerIcons = styled.div`
   svg {
     margin-left: 20px;
     color: #eabc54;
+    transition: transform 0.5s; /* Animation */
+
+    :hover {
+      transform: scale(
+        1.6
+      ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
   }
 `;
 
@@ -89,5 +96,10 @@ export const Footer = styled.p`
   text-align: center;
   padding: 5px;
   background: #2a2827;
-  color: #eabc54;
+  color: white;
+
+  a {
+    color: #eabc54;
+    cursor: pointer;
+  }
 `;
