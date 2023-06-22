@@ -75,6 +75,15 @@ export const Answer = styled.div`
   }
 `;
 
+export const SocialMedias = styled.div`
+  margin-top: 10px;
+  display: grid;
+
+  span {
+    padding: 7px;
+  }
+`;
+
 export const Footer = styled.p`
   text-align: center;
   padding: 5px;

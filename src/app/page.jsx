@@ -3,13 +3,17 @@
 import { useEffect, useState } from "react";
 import { quotes } from "../data/quotes";
 import _ from "lodash";
-import { Header, ContainerIcons, Main, Title, Box, Question, Answer, Footer } from "./styles";
+import { Header, ContainerIcons, Main, Title, Box, Question, Answer, Footer, SocialMedias } from "./styles";
 import { BsLinkedin, BsDiscord, BsGithub} from 'react-icons/bs';
 import logo from "../assets/logo.png"
 import profile from "../assets/profile.jpg"
 import bg from '../assets/image.jpg'
 import Image from 'next/image'
 import Button from '../components/Button/index'
+import {
+  TwitterShareButton,
+  TwitterIcon,
+} from "react-share";
 
 const Home = () => {
   const [quote, setQuote] = useState("");
@@ -59,6 +63,16 @@ const Home = () => {
       <p>{`"${quote}"`}</p>
       </Answer>
       </Box>
+      <SocialMedias>
+      <span>Compartilhe</span>
+      <TwitterShareButton
+              title={`${quote} 
+              \nvia: `}
+              url={"https://ilude.me"}
+            >
+              <TwitterIcon size={24} round />
+      </TwitterShareButton>
+      </SocialMedias>
     </Main>
     <Footer>Desenvolvido com muita desgraça por @otaldogui__</Footer>
     </>
