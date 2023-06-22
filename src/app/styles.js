@@ -33,7 +33,7 @@ export const Main = styled.div`
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 120px);
 `;
 
 export const Title = styled.h1`
@@ -94,7 +94,7 @@ export const SocialMedias = styled.div`
 
 export const Footer = styled.p`
   text-align: center;
-  padding: 5px;
+  padding: 15px;
   background: #2a2827;
   color: white;
 
