@@ -90,6 +90,16 @@ export const SocialMedias = styled.div`
   span {
     padding: 7px;
   }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      margin: 4px;
+    }
+  }
 `;
 
 export const Footer = styled.p`

@@ -13,6 +13,12 @@ import Button from '../components/Button/index'
 import {
   TwitterShareButton,
   TwitterIcon,
+  FacebookShareButton,
+  FacebookIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  EmailShareButton,
+  EmailIcon,
 } from "react-share";
 
 const Home = () => {
@@ -65,13 +71,29 @@ const Home = () => {
       </Box>
       <SocialMedias>
       <span>Compartilhe</span>
+      <div>
       <TwitterShareButton
               title={`${quote} 
               \nvia: `}
-              url={"https://ilude.me"}
+              url={"https://iluda-me-x5guilhermebr.vercel.app"}
             >
               <TwitterIcon size={24} round />
       </TwitterShareButton>
+      <LinkedinShareButton
+        url={"https://iluda-me-x5guilhermebr.vercel.app"}
+        source={"Ilude.me"}
+        title={`${quote} 
+        \nvia: `}
+        summary={quote}
+      >
+        <LinkedinIcon size={24} round/>
+      </LinkedinShareButton>
+      <EmailShareButton 
+      subject="Frase do dia - Ilude.me"
+      body={quote} >
+        <EmailIcon size={24} round/>
+      </EmailShareButton>
+      </div>
       </SocialMedias>
     </Main>
     <Footer>Desenvolvido com muita desgraça por <a href="https://bio.site/_otaldogui" target="_blank">@otaldogui__</a></Footer>
