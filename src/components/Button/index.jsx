@@ -5,7 +5,10 @@ import { BsFillSendFill } from 'react-icons/bs';
 
 const Button = () => {
   return (
-  <ButtonStyles href='https://docs.google.com/forms/d/e/1FAIpQLSf44XBjS0LYaF5XDgQMDP8hQC4fTY31EAFKsb25AEJMOSHYUQ/viewform'>
+  <ButtonStyles 
+    href='https://docs.google.com/forms/d/e/1FAIpQLSf44XBjS0LYaF5XDgQMDP8hQC4fTY31EAFKsb25AEJMOSHYUQ/viewform'
+    target="_blank"
+    >
     <BsFillSendFill/>
     Envie sua motivação
     </ButtonStyles>

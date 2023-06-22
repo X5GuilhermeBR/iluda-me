@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonStyles = styled.button`
+export const ButtonStyles = styled.a`
   padding: 10px;
   border: none;
   background-color: #eabc54;
@@ -8,6 +8,7 @@ export const ButtonStyles = styled.button`
   color: #2a2827;
   cursor: pointer;
   margin-left: 20px;
+  font-size: 14px;
 
   svg {
     color: #2a2827;
