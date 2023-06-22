@@ -28,13 +28,13 @@ const Home = () => {
     <Title>Iluda.me</Title>
   </ContainerIcons>
   <ContainerIcons>
-    <a href="">
+    <a href="https://www.linkedin.com/in/guilhermejfmello/">
     <BsLinkedin />
     </a>
-    <a href="">
+    <a href="https://discord.gg/d84JqRu">
     <BsDiscord />
     </a>
-    <a href="">
+    <a href="https://github.com/X5GuilhermeBR">
     <BsGithub />
     </a>
   </ContainerIcons>
