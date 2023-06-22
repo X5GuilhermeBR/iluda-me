@@ -74,7 +74,7 @@ const Home = () => {
       </TwitterShareButton>
       </SocialMedias>
     </Main>
-    <Footer>Desenvolvido com muita desgraça por @otaldogui__</Footer>
+    <Footer>Desenvolvido com muita desgraça por <a href="https://bio.site/_otaldogui" target="_blank">@otaldogui__</a></Footer>
     </>
   );
 };
