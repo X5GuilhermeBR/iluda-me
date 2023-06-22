@@ -58,7 +58,7 @@ export const Question = styled.div`
   p {
     margin-top: 20px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 
@@ -72,6 +72,7 @@ export const Answer = styled.div`
 
   p {
     text-align: center;
+    font-size: 16px;
   }
 `;
 
