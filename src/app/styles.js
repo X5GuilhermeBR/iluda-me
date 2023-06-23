@@ -61,6 +61,9 @@ export const Question = styled.div`
   padding: 20px;
   color: white;
   margin-top: -30px;
+  -webkit-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.2);
 
   p {
     margin-top: 20px;
@@ -76,6 +79,9 @@ export const Answer = styled.div`
   color: black;
   background-color: white;
   height: auto;
+  -webkit-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 10px 5px 0px rgba(0, 0, 0, 0.2);
 
   p {
     text-align: center;
