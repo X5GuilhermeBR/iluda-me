@@ -6,13 +6,17 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-right: 5%;
 `;
 
 export const ContainerIcons = styled.div`
   display: flex;
   align-items: center;
+
+  div {
+    margin-left: 10%;
+  }
 
   svg {
     margin-left: 20px;

@@ -20,11 +20,10 @@ import profile from "../assets/profile.jpg";
 import bg from "../assets/image.jpg";
 import Image from "next/image";
 import Button from "../components/Button/index";
+import NavbarButton from "../components/NavbarButton/index"
 import {
   TwitterShareButton,
   TwitterIcon,
-  FacebookShareButton,
-  FacebookIcon,
   LinkedinShareButton,
   LinkedinIcon,
   EmailShareButton,
@@ -44,6 +43,10 @@ const Home = () => {
         <ContainerIcons>
           <Image src={logo} width={50} height={50} />
           <Title>Iluda.me</Title>
+          <div>
+          <NavbarButton href="/historico" title="HISTÓRICO"/>
+          <NavbarButton href="/historico" title="FRASES"/>
+          </div>
         </ContainerIcons>
         <ContainerIcons>
           <a href="https://www.linkedin.com/in/guilhermejfmello/" target="_blank">
