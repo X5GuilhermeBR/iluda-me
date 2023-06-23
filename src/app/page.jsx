@@ -46,13 +46,13 @@ const Home = () => {
           <Title>Iluda.me</Title>
         </ContainerIcons>
         <ContainerIcons>
-          <a href="https://www.linkedin.com/in/guilhermejfmello/">
+          <a href="https://www.linkedin.com/in/guilhermejfmello/" target="_blank">
             <BsLinkedin />
           </a>
-          <a href="https://discord.gg/d84JqRu">
+          <a href="https://discord.gg/d84JqRu" target="_blank">
             <BsDiscord />
           </a>
-          <a href="https://github.com/X5GuilhermeBR">
+          <a href="https://github.com/X5GuilhermeBR" target="_blank">
             <BsGithub />
           </a>
           <Button />
