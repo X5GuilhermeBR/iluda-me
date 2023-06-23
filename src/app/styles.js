@@ -43,6 +43,8 @@ export const Title = styled.h1`
 `;
 
 export const Box = styled.div`
+  cursor: pointer;
+
   img {
     border-radius: 50px;
     display: block;
@@ -50,6 +52,12 @@ export const Box = styled.div`
     margin-right: auto;
     position: relative;
     border: 3px solid white;
+  }
+
+  transition: transform 0.5s; /* Animation */
+
+  :hover {
+    transform: scale(1.1);
   }
 `;
 
