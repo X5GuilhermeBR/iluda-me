@@ -4,23 +4,15 @@ import { useEffect, useState } from "react";
 import { quotes } from "../data/quotes";
 import _ from "lodash";
 import {
-  Header,
-  ContainerIcons,
   Main,
-  Title,
   Box,
   Question,
   Answer,
-  Footer,
   SocialMedias,
 } from "./styles";
-import { BsLinkedin, BsDiscord, BsGithub } from "react-icons/bs";
-import logo from "../assets/logo.png";
 import profile from "../assets/profile.jpg";
 import bg from "../assets/image.jpg";
 import Image from "next/image";
-import Button from "../components/Button/index";
-import NavbarButton from "../components/NavbarButton/index"
 import {
   TwitterShareButton,
   TwitterIcon,
@@ -29,6 +21,8 @@ import {
   EmailShareButton,
   EmailIcon,
 } from "react-share";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   const [quote, setQuote] = useState("");
@@ -39,28 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <Header>
-        <ContainerIcons>
-          <Image src={logo} width={50} height={50} />
-          <Title>Iluda.me</Title>
-          <div>
-          <NavbarButton href="/historico" title="HISTÓRICO"/>
-          <NavbarButton href="/historico" title="FRASES"/>
-          </div>
-        </ContainerIcons>
-        <ContainerIcons>
-          <a href="https://www.linkedin.com/in/guilhermejfmello/" target="_blank">
-            <BsLinkedin />
-          </a>
-          <a href="https://discord.gg/d84JqRu" target="_blank">
-            <BsDiscord />
-          </a>
-          <a href="https://github.com/X5GuilhermeBR" target="_blank">
-            <BsGithub />
-          </a>
-          <Button />
-        </ContainerIcons>
-      </Header>
+      <Navbar />
       <Main
         style={{
           backgroundImage: `url(${bg.src})`,
@@ -106,12 +79,7 @@ const Home = () => {
           </div>
         </SocialMedias>
       </Main>
-      <Footer>
-        Desenvolvido com muita desgraça por{" "}
-        <a href="https://bio.site/_otaldogui" target="_blank">
-          @otaldogui__
-        </a>
-      </Footer>
+      <Footer />
     </>
   );
 };
