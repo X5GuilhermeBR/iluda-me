@@ -12,14 +12,14 @@ import {
   EmailIcon,
 } from "react-share";
 import { useEffect, useState } from "react";
-import { quotes } from "@/data/quotes";
-import _ from "lodash";
+import { updateQuote } from "@/utils/updateQuote";
 
 const Button = () => {
   const [quote, setQuote] = useState("");
 
   useEffect(() => {
-    setQuote(_.sample(quotes) || "");
+    const resultQuote = updateQuote();
+    setQuote(resultQuote);
   }, []);
 
   return (
